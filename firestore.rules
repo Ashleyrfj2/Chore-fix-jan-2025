@@ -1,0 +1,11 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Safe public-repository default. Configure Firebase Authentication and
+    // least-privilege rules for your own deployment before enabling access.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

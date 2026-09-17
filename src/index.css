@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+/* Extra minimal base styles (kept as in original single-file app) */
+html,body,#root{height:100%}
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial}
+
+/* keep styling via Tailwind classes in components */
